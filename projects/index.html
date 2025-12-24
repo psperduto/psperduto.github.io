@@ -4,6 +4,34 @@
   <meta charset="UTF-8">
   <title>Projects – Preston Sperduto</title>
   <link rel="stylesheet" href="/css/coder.min.css">
+  <style>
+    .projects-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 40px;
+    }
+    .project-tile {
+      background-color: #f0f0f0;
+      width: 250px;
+      height: 150px;
+      border-radius: 12px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2em;
+      text-decoration: none;
+      color: #333;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .project-tile:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+  </style>
 </head>
 <body>
   <nav>
@@ -11,10 +39,12 @@
     <a href="/projects/">Projects</a>
   </nav>
 
-  <h1>Projects</h1>
-  <ul>
-    <li>Project 1</li>
-    <li>Project 2</li>
-  </ul>
+  <h1 style="text-align:center;">Projects</h1>
+
+  <div class="projects-grid">
+    <a class="project-tile" href="/projects/math/">Math</a>
+    <a class="project-tile" href="/projects/ml/">Machine Learning</a>
+    <a class="project-tile" href="/projects/biology/">Computational Biology</a>
+  </div>
 </body>
 </html>
